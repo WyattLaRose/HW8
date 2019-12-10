@@ -1,0 +1,59 @@
+<!--
+Homework 8 Java Script
+Name: Wyatt LaRose
+Student Email: Wyatt_LaRose@student.uml.edu
+Computer Science Email: wlarose@cs.uml.edu
+Affiliation: UMass Lowell Computer Science, Junior Year
+Date Created: 12/9/2019
+Description:
+This assignment added the use of sliders as well as the tabs for jquery UI.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+	  <link rel="stylesheet" href="css/styleSheet.css">
+  </head>
+  <body>
+
+    <form id="inputForm"> <!-- creating a form named input form -->
+      <h2 id="mult1">Enter Start and End Multiplier:</h2><br> <!-- Creating a heading so the user knows what numbers to input-->
+      <input type="text" name="num1" id="num1" required><!-- This is used for text field inputs-->
+      <div class="slider" id="num1Slider"></div><!-- This is used for the slider containers, these 2-3 lines are repeated for all 4 input fields.-->
+      <br><!-- Line breaks are used to make it look nicer -->
+	    <input type="text" name="num2" id="num2" required>
+      <div class="slider" id="num2Slider"></div>
+      <br>
+      <h2 id="mult2">Enter Start and End Multiplicand:</h2><br>
+      <input type="text" name="num3" id="num3" required>
+      <div class="slider" id="num3Slider"></div>
+      <br>
+      <input type="text" name="num4" id="num4" required>
+      <div class="slider" id="num4Slider"></div>
+      <br><br>
+      <br>
+      <button type="button" value="Submit" onclick="submitTable()">Submit</button> <!-- Button that is used to submit the table to be stored in the tabs-->
+      <button type="button" onclick="clearTabs()">Clear Tabs</button><!-- This is used to call the clear tabs function in the js-->
+    </form>
+    <div id="tabsDel">
+      <div id="tabs">
+        <ul>
+        </ul>
+      </div>
+    </div>
+   
+  </body>
+  <!-- All the links used for the jquery and js -->
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+    <script src="js/javaScript.js"></script>
+    <script>
+    </script>
+</html>
+
+

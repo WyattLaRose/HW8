@@ -1,0 +1,76 @@
+/*
+	//Homework 5 Java Script
+	//Name: Wyatt LaRose
+	//Student Email: Wyatt_LaRose@student.uml.edu
+	//Computer Science Email: wlarose@cs.uml.edu
+	//Affiliation: UMass Lowell Computer Science, Junior Year
+*/
+/*form .error is what changes the error message color.*/
+form .error { 
+  color: #ff0000;
+}
+table{
+   overflow-y:scroll;
+   overflow-x:scroll;
+   height:500px;
+   width:500px;
+   display:block;
+}
+table, td {
+  margin:0px;
+  padding: 15px;
+  text-align: center;
+}
+tr td
+{
+    background-color: #ffa996;
+}
+
+tr:nth-child(even) td:nth-child(odd)
+{
+    background-color: #96ffe7;
+}
+tr:nth-child(odd) td:nth-child(even)
+{
+	background-color: #96ffe7;
+}
+tr:nth-child(1) td
+{
+	background-color: gray !important;
+	color:white;
+}
+td:nth-child(1)
+{
+	background-color: gray !important;
+	color:white;
+}
+/*
+	Everythign above here is used to style the table for the checker board effect as while as size of the tiles and the first coloum and first row
+	being different colors. The first style also allows for you to scroll throught the table if it is bigger than a 500x500px square to allow for bigger tables to be 	eaiser to navigate.
+*/
+/*
+	Everything below here is meant to style the button, inputs and the heading and has no effect on the table its self.
+*/
+h2{
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+}
+button{
+	background-color:gray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right:20px;
+	color: white;
+	font-size: 15px;
+	
+}
+input{
+	margin:5px;
+	font-size: 15px;
+}
+.slider{
+	width:170px;
+	margin-left:5px;
+}
